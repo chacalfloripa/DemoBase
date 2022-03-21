@@ -5,7 +5,5 @@
 	"homepage": "chacal.florpa.br/demobase",
 	"mainsrc": "./src",
 	"projects": [],
-	"dependencies": {
-		"https://github.com/chacalfloripa/acbr": "^v0.0.24969"
-	}
+	"dependencies": { }
 }

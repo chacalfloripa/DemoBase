@@ -1,14 +1,6 @@
 {
 	"hash": "d41d8cd98f00b204e9800998ecf8427e",
 	"updated": "2022-02-14T18:01:49.3640118-03:00",
-	"installedModules": {
-		"https://github.com/chacalfloripa/acbr": {
-			"name": "acbr",
-			"version": "v0.0.24969",
-			"hash": "3cc9ec2ba1c6dd0709af391d1e92087b",
-			"artifacts": {},
-			"failed": false,
-			"changed": false
-		}
+	"installedModules": { }
 	}
 }
