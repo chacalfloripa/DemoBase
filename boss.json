@@ -1,0 +1,11 @@
+{
+	"name": "DemoBase",
+	"description": "Projeto base para criação de exemplo de projeto em Lazarus.",
+	"version": "1.0.0",
+	"homepage": "chacal.florpa.br/demobase",
+	"mainsrc": "./src",
+	"projects": [],
+	"dependencies": {
+		"https://github.com/chacalfloripa/acbr": "^v0.0.24969"
+	}
+}

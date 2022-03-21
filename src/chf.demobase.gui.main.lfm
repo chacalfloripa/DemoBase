@@ -1,0 +1,110 @@
+object CHFDemoBaseGUIMain: TCHFDemoBaseGUIMain
+  Left = 397
+  Height = 595
+  Top = 250
+  Width = 806
+  Caption = 'CHFDemoBaseGUIMain'
+  ClientHeight = 595
+  ClientWidth = 806
+  OnCreate = FormCreate
+  object Splitter1: TSplitter
+    Cursor = crVSplit
+    Left = 0
+    Height = 5
+    Top = 443
+    Width = 806
+    Align = alBottom
+    ResizeAnchor = akBottom
+  end
+  object pgGeral: TPageControl
+    Left = 0
+    Height = 413
+    Top = 30
+    Width = 806
+    ActivePage = tabMain
+    Align = alClient
+    TabIndex = 0
+    TabOrder = 1
+    object tabMain: TTabSheet
+      Caption = 'Principal'
+      OnContextPopup = tabMainContextPopup
+    end
+    object tabConfig: TTabSheet
+      Caption = 'Configuração'
+    end
+  end
+  object Label1: TLabel
+    Left = 0
+    Height = 30
+    Top = 0
+    Width = 806
+    Align = alTop
+    Alignment = taCenter
+    Caption = 'EXEMPLO HOMOLOGAÇÃO EXEMPLO'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -21
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object pnlLog: TPanel
+    Left = 0
+    Height = 147
+    Top = 448
+    Width = 806
+    Align = alBottom
+    BevelOuter = bvNone
+    ClientHeight = 147
+    ClientWidth = 806
+    TabOrder = 2
+    object MemLog: TMemo
+      Left = 0
+      Height = 112
+      Top = 0
+      Width = 806
+      Align = alClient
+      Font.CharSet = ANSI_CHARSET
+      Font.Name = 'Courier New'
+      Font.Pitch = fpFixed
+      Font.Quality = fqDraft
+      Lines.Strings = (
+        'MemLog'
+      )
+      ParentFont = False
+      ScrollBars = ssAutoBoth
+      TabOrder = 0
+    end
+    object pnlRodapeLog: TPanel
+      Left = 0
+      Height = 35
+      Top = 112
+      Width = 806
+      Align = alBottom
+      BevelOuter = bvNone
+      ClientHeight = 35
+      ClientWidth = 806
+      TabOrder = 1
+      object Button1: TButton
+        Left = 723
+        Height = 25
+        Top = 5
+        Width = 75
+        Anchors = [akRight, akBottom]
+        Caption = 'Limpar Log'
+        OnClick = Button1Click
+        TabOrder = 0
+      end
+      object cbxLogAtivo: TCheckBox
+        Left = 8
+        Height = 19
+        Top = 5
+        Width = 76
+        Caption = 'Ativar log?'
+        TabOrder = 1
+      end
+    end
+  end
+end
